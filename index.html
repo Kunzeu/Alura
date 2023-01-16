@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mukta&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/svg" sizes="16x16" href="img/pc.png">
+    <title>Challenge Alura</title>
+</head>
+<body>
+    <nav class="nav">
+      
+        <h1><img src="img/logo.svg" sizes="20"> Encripta y descencripta tus textos</h1>
+    
+    </nav>
+    <div class="main-container" >
+        <form id="form"  class="ingreso" action="#" method="post">
+            
+            <textarea  class="entrada"  autocapitalize="none" autocomplete="off"  maxlength="500"  rows="8" cols="60" autofocus placeholder="Ingrese el texto a encriptar y/o desencriptar"></textarea>
+            <p class="warning" >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                <circle cx="12" cy="12" r="9" />
+                <line x1="12" y1="8" x2="12" y2="12" />
+                <line x1="12" y1="16" x2="12.01" y2="16" />
+              </svg> Solo letras minusculas y sin acentos
+            </p>
+
+            <div class="botones" >
+                <button class="execute first " type="button">Encriptar</button>
+                <button class="execute second " type="button">Descencriptar</button>
+            </div>
+        </form>
+        <div class="crypted" >
+            <div class="crypted-void" >
+                <p  class="bold-text">Ningun mensaje fue encontrado</p>
+                <p class="small-text" >Ingresa el textro que desees encriptar o desencriptar</p>
+            </div>
+            <button class="execute third " type="button">Copiar</button>
+        </div>
+        
+    </div>
+    
+    
+    <script src="./app.js"></script>
+</body>
+</html>
